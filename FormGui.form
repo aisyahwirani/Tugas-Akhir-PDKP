@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="FormGui">
+  <grid id="27dc6" binding="GuiPanel" layout-manager="GridLayoutManager" row-count="18" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="834" height="534"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="b9977" class="javax.swing.JLabel" binding="Jlabel1">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="PEMBELIAN KOMPUTER"/>
+        </properties>
+      </component>
+      <component id="ac9da" class="javax.swing.JLabel" binding="Jlabel2">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AISYAH WIRANI SRIWANGSA (21120121130079)"/>
+        </properties>
+      </component>
+      <component id="310a6" class="javax.swing.JLabel" binding="Jlabel4">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="196" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="NAMA BARANG"/>
+        </properties>
+      </component>
+      <component id="9a6d5" class="javax.swing.JLabel" binding="Jlabel5">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="196" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="HARGA BARANG"/>
+        </properties>
+      </component>
+      <component id="d7ad6" class="javax.swing.JLabel" binding="Jlabel6">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="196" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="JUMLAH BELI"/>
+        </properties>
+      </component>
+      <component id="d053c" class="javax.swing.JLabel" binding="Jlabel7">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="196" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="JUMLAH HARGA"/>
+        </properties>
+      </component>
+      <component id="ff336" class="javax.swing.JLabel" binding="Jlabel3">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="196" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="KODE BARANG"/>
+        </properties>
+      </component>
+      <component id="8a550" class="javax.swing.JComboBox" binding="cbkb">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="204" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="AX"/>
+            <item value="AC"/>
+            <item value="TSH"/>
+            <item value="SN"/>
+            <item value="DL"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a320e" class="javax.swing.JTextField" binding="textnb">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="204" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b819c" class="javax.swing.JTextField" binding="texthb">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="204" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="440d0" class="javax.swing.JTextField" binding="textjb">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="204" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="faa7" class="javax.swing.JTextField" binding="textjh">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="204" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1faa3" class="javax.swing.JLabel" binding="Jlabel8">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="101" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="DISKON"/>
+        </properties>
+      </component>
+      <component id="d44e5" class="javax.swing.JTextField" binding="textdiskon">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1b472" class="javax.swing.JLabel" binding="Jlabel9">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="101" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="TOTAL HARGA"/>
+        </properties>
+      </component>
+      <component id="952ea" class="javax.swing.JLabel" binding="Jlabel0">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="101" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="PAJAK"/>
+        </properties>
+      </component>
+      <component id="e0530" class="javax.swing.JLabel" binding="Jabel1">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="101" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="TOTAL BAYAR"/>
+        </properties>
+      </component>
+      <component id="3f815" class="javax.swing.JTextField" binding="textth">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ce404" class="javax.swing.JTextField" binding="textpajak">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="851ae" class="javax.swing.JTextField" binding="texttb">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="3553e" class="javax.swing.JButton" binding="BAYARbutton">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="BAYAR"/>
+        </properties>
+      </component>
+      <hspacer id="aad6f">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="3421b">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="947e2">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="54715" class="javax.swing.JLabel" binding="Jabel2">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="NAMA"/>
+        </properties>
+      </component>
+      <component id="601c3" class="javax.swing.JLabel" binding="Jabel3">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="NIM"/>
+        </properties>
+      </component>
+      <component id="985d5" class="javax.swing.JTextField" binding="textNama">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a1218" class="javax.swing.JTextField" binding="textNIM">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b0f20" class="javax.swing.JButton" binding="TAMBAHDATAButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="TAMBAH DATA"/>
+        </properties>
+      </component>
+      <component id="c4793" class="javax.swing.JTextField" binding="textlist">
+        <constraints>
+          <grid row="12" column="1" row-span="5" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="150"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <vspacer id="5bc2b">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="d0427" class="javax.swing.JButton" binding="LIHATDATAButton">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="LIHAT DATA"/>
+        </properties>
+      </component>
+      <component id="e9e2f" class="javax.swing.JLabel" binding="Jabel4">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="DATA PEMBELIAN:"/>
+        </properties>
+      </component>
+      <vspacer id="2a283">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
