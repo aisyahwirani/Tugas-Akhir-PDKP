@@ -1,0 +1,219 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Queue;
+import java.util.StringTokenizer;
+import java.util.LinkedList;
+
+public class FormGui {
+    private JPanel GuiPanel;
+    private JComboBox cbkb;
+    private JTextField textNama;
+    private JTextField textNIM;
+    private JTextField textnb;
+    private JTextField texthb;
+    private JTextField textjb;
+    private JTextField textjh;
+    private JTextField textdiskon;
+    private JTextField textth;
+    private JTextField textpajak;
+    private JTextField texttb;
+    private JButton BAYARbutton;
+    private JLabel Jlabel1;
+    private JLabel Jlabel2;
+    private JLabel Jlabel3;
+    private JLabel Jlabel4;
+    private JLabel Jlabel5;
+    private JLabel Jlabel6;
+    private JLabel Jlabel7;
+    private JLabel Jlabel8;
+    private JLabel Jlabel9;
+    private JLabel Jlabel0;
+    private JLabel Jabel1;
+    private JLabel Jabel2;
+    private JLabel Jabel3;
+    private JButton TAMBAHDATAButton;
+    private JButton LIHATDATAButton;
+    private JTextField textlist;
+    private JLabel Jabel4;
+
+    public String kodebarang="";
+    public String namabarang="";
+    public int hargabarang;
+    public int jumlahbeli;
+    public double jumlahharga;
+    public double diskon;
+    public double totalharga;
+    public double pajak;
+    public double totalbayar;
+    public String format="";
+    public StringTokenizer token;
+    public int count;
+    public Object[] array;
+    public int front;
+    public int capacity;
+
+    Queue list = new LinkedList();
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("FormGui");
+        frame.setContentPane(new FormGui().GuiPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    public FormGui() {
+        cbkb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                kodebarang = (String) cbkb.getSelectedItem();
+                if (kodebarang == "AX") {
+                    namabarang = "AXIO";
+                    hargabarang = 3500000;
+                } else if (kodebarang == "AC") {
+                    namabarang = "ACER";
+                    hargabarang = 4500000;
+                } else if (kodebarang == "TSH") {
+                    namabarang = "TOSHIBA";
+                    hargabarang = 6000000;
+                } else if (kodebarang == "SN") {
+                    namabarang = "SONY";
+                    hargabarang = 7000000;
+                } else if (kodebarang == "DL") {
+                    namabarang = "DELL";
+                    hargabarang = 8000000;
+                }
+                textnb.setText(String.valueOf(namabarang));
+                format = NumberFormat.getNumberInstance(Locale.ENGLISH).format(hargabarang);
+                token = new StringTokenizer(format, ".");
+                format = token.nextToken();
+                format = format.replace(',', '.');
+                texthb.setText(format);
+            }
+        });
+
+        textjb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jumlahbeli=Integer.parseInt(textjb.getText());
+                jumlahharga=jumlahbeli*hargabarang;
+                if((jumlahbeli>=5) && (jumlahbeli<=9)){
+                    diskon=0.15*jumlahharga;
+                }
+                else if((jumlahbeli>=10) && (jumlahbeli<=15)) {
+                    diskon=0.2*jumlahharga;
+                }
+                else if((jumlahbeli>=16) && (jumlahbeli<=25)) {
+                    diskon=0.3*jumlahharga;
+                }
+                else if(jumlahbeli>25) {
+                    diskon=0.35*jumlahharga;
+                }
+                else {
+                    diskon=0;
+                }
+                totalharga=jumlahharga-diskon;
+                pajak=0.1*totalharga;
+                totalbayar=totalharga+pajak;
+                format=NumberFormat.getNumberInstance(Locale.ENGLISH).format(jumlahharga);
+                token=new StringTokenizer(format,".");
+                format=token.nextToken();
+                format=format.replace(',','.');
+                textjh.setText(format);
+
+                format=NumberFormat.getNumberInstance(Locale.ENGLISH).format(diskon);
+                token=new StringTokenizer(format,".");
+                format=token.nextToken();
+                format=format.replace(',','.');
+                textdiskon.setText(format);
+
+                format=NumberFormat.getNumberInstance(Locale.ENGLISH).format(totalharga);
+                token=new StringTokenizer(format,".");
+                format=token.nextToken();
+                format=format.replace(',','.');
+                textth.setText(format);
+
+                format=NumberFormat.getNumberInstance(Locale.ENGLISH).format(pajak);
+                token=new StringTokenizer(format,".");
+                format=token.nextToken();
+                format=format.replace(',','.');
+                textpajak.setText(format);
+
+                format=NumberFormat.getNumberInstance(Locale.ENGLISH).format(totalbayar);
+                token=new StringTokenizer(format,".");
+                format=token.nextToken();
+                format=format.replace(',','.');
+                texttb.setText(format);
+            }
+        });
+
+        BAYARbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (textNama.getText().equals("Aisyah Wirani Sriwangsa") && textNIM.getText().equals("21120121130079")) {
+                    JOptionPane.showMessageDialog(null, "Pembelian berhasil");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Maaf Nama dan NIM salah");
+                    textNama.setText("");
+                    textNIM.setText("");
+                    textNama.requestFocus();
+                }
+                cbkb.setSelectedIndex(-1);
+                textnb.setText("");
+                texthb.setText("");
+                textjb.setText("");
+                textjh.setText("");
+                textdiskon.setText("");
+                textth.setText("");
+                textpajak.setText("");
+                texttb.setText("");
+                textNama.setText("");
+                textNIM.setText("");
+            }
+        });
+        textNama.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nama = textNama.getText();
+                String NIM = textNIM.getText();
+            }
+        });
+        TAMBAHDATAButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tambahData();
+                cbkb.setSelectedIndex(-1);
+                textnb.setText("");
+                texthb.setText("");
+                textjb.setText("");
+                textjh.setText("");
+                textdiskon.setText("");
+                textth.setText("");
+                textpajak.setText("");
+                texttb.setText("");
+            }
+        });
+        LIHATDATAButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textlist.setText(String.valueOf(list.enqueue));
+            }
+        });
+    }
+    public void tambahData() {
+        count++;
+        String brg = textnb.getText();
+        list.add(brg);
+    }
+    public void enqueue() {
+        for(int i = 0; i < count ; i++){
+            System.out.print(array[(front + i) % capacity] + " ");
+        }
+    }
+}
+
+
